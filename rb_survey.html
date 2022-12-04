@@ -6,7 +6,7 @@
       Tutorial 7
       Tutorial Case
 
-      Red Ball Pizza Survey Form
+      website video contest Form
       Author: Jerome Yang
       Date:   12/03/22
 
@@ -16,7 +16,7 @@
    
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Red Ball Survey</title>
+   <title>website video contest</title>
    <link href="rb_reset.css" rel="stylesheet" />
    <link href="rb_styles.css" rel="stylesheet" />
    <link href="rb_forms.css" rel="stylesheet" />	
@@ -42,19 +42,21 @@
 
       <h1>2023 Website Video Production Contest</h1>
 	   
-      <p>Judge viewers who score the top three favorites
+      <p>Judge viewers (you) who score the top three favorites
          will be sharing <em>10% of raise bonus</em>. </p>
       <p>The top three favorite performers
          will be sharing <em>10% of raise bonus</em>. </p>
-	  <p>Judge viewers who score the top 10 best performers
+	  <p>Judge viewers (you) who score the top 10 best performers
          will be sharing <em>10% of raise bonus</em>. </p>
 	  <p>The top 10 best performers
          will be sharing <em>10% of raise bonus</em>. </p>
 	   <p>All of the video contestant performers
          will be sharing <em>20% of raise bonus</em>. </p>
-	    <p><em>40% of raise bonus</em> will be the producer fund.
-		You will get the concert tickets if you have raised enough bonus 
-			for your favorites artist. </p>
+	   <p><em>40% of raise bonus</em> will be the producer fund.</p>
+		<p>You will get the concert tickets if you have raised enough bonus 
+			for your favorites artist to have the concert. </p>
+	   <p>You will get the album if you have raised enough bonus 
+			for your favorites artist to publish the album. </p>
 	   
 	   
       <p>Required values are marked by an asterisk (*)</p>
@@ -77,8 +79,7 @@
 </div>
 	 
 
-	 
-	 <div class="formRow">
+ <div class="formRow">
 <label for="dineSpin">The Score toward the performer artist:</label>
 <input name="dineOut" id="dineSpin" type="number"
 value="1" step="1" min="1" max="99" />
@@ -130,10 +131,16 @@ type="radio" />
 type="radio" />
 </fieldset>
 </div>
-		 	 
+	
 <div class="formRow">
-<label for="name">Name*</label>
-<input name="custName" id="name" type="text" placeholder="first and last name" required />
+<label for="bonusSpin">The bonus toward your performer artist (group): $</label>
+<input name="bonusOut" id="bonusSpin" type="number"
+value="1" step="1" min="1" max="9999" />
+</div>
+	
+<div class="formRow">
+<label for="name">The bonus toward your performer artist (group) name:</label>
+<input name="favorName" id="contestantName" type="text" placeholder="first and last name"  />
 </div>
 	  
 	
